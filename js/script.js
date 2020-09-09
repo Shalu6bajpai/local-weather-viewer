@@ -58,7 +58,7 @@ $(document).ready(function() {
 		//Looking up the weather from Darkskies using users latitude and longitude.
 		//Please don't use this API key. Get your own from DarkSkies.
 		var weatherApiKey = "2e99be7a3e035cefe72de27481239a77";
-		var weatherApiCall = "https://api.darksky.net/forecast/"+weatherApiKey+"/"+lat+","+lon+"?units=si";
+		var weatherApiCall = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/forecast/"+weatherApiKey+"/"+lat+","+lon+"?units=si";
 		$.ajax({
 			url: weatherApiCall,
 			type: "GET",
